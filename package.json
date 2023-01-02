@@ -1,0 +1,29 @@
+{
+  "name": "@chadslab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo run dev",
+    "check": "turbo run test typecheck",
+    "dev:utils": "turbo run dev --filter=@chadslab/utils",
+    "dev:blog": "turbo run dev --filter=@chadslab/blog",
+    "dev:dashboard": "turbo run dev --filter=@chadslab/dashboard",
+    "test:utils": "turbo run test --filter=@chadslab/utils",
+    "test:blog": "turbo run test --filter=@chadslab/blog",
+    "test:dashboard": "turbo run test --filter=@chadslab/dashboard",
+    "typecheck:utils": "turbo run typecheck --filter=@chadslab/utils",
+    "typecheck:blog": "turbo run typecheck --filter=@chadslab/blog",
+    "typecheck:dashboard": "turbo run typecheck --filter=@chadslab/dashboard"
+  },
+  "keywords": [],
+  "author": "Chad D Elofson <chad@chadslab.net> (https://chadelofson.com/)",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "devDependencies": {
+    "turbo": "1.6.3"
+  }
+}
